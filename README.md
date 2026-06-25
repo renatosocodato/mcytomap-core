@@ -15,11 +15,11 @@ Tables 1A/1B and Figure 3C of the paper, and the per-cell values in Supplementar
 Table S1.
 
 [![CI](https://github.com/renatosocodato/mcytomap-core/actions/workflows/ci.yml/badge.svg)](https://github.com/renatosocodato/mcytomap-core/actions)
-[![DOI](https://zenodo.org/badge/DOI/PLACEHOLDER.svg)](https://doi.org/PLACEHOLDER)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20848905.svg)](https://doi.org/10.5281/zenodo.20848905)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-> Replace `ORG` and the DOI badge after the GitHub push and Zenodo deposit (see
-> **Release & archiving** below).
+> **Published:** v1.0.0 is archived at https://doi.org/10.5281/zenodo.20848906
+> (concept DOI for all versions: 10.5281/zenodo.20848905).
 
 ## Contents
 
