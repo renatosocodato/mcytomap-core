@@ -1,0 +1,25 @@
+{
+  "@context": "https://w3id.org/codemeta/3.0",
+  "@type": "SoftwareSourceCode",
+  "name": "mCytoMAP-core",
+  "description": "Reference implementation of the literature-derived Evidence-Tier prior layer of mCytoMAP: the ETS rubric, two-tier prior pi_norm, posterior coupling, and per-cell ETS. Reproduces and asserts the per-node values in Tables 1A/1B, Figure 3C, and Supplementary Table S1 of the Targetome Perspective Target-S2026-0032.",
+  "version": "1.2.0",
+  "license": "https://spdx.org/licenses/MIT.html",
+  "programmingLanguage": "Python",
+  "runtimePlatform": "Python 3.10+",
+  "operatingSystem": "OS Independent",
+  "codeRepository": "https://github.com/renatosocodato/mcytomap-core",
+  "identifier": "https://doi.org/10.5281/zenodo.20848905",
+  "developmentStatus": "active",
+  "keywords": ["microglia", "aging", "cytoskeleton", "Targetome", "mCytoMAP", "evidence grading", "reproducibility"],
+  "author": [
+    {"@type": "Person", "givenName": "Inês", "familyName": "Mendes Pinto", "affiliation": {"@type": "Organization", "name": "i3S / FMUP, University of Porto"}},
+    {"@type": "Person", "givenName": "Pedro", "familyName": "Beça", "affiliation": {"@type": "Organization", "name": "i3S, University of Porto"}},
+    {"@type": "Person", "givenName": "Miguel", "familyName": "Correia", "affiliation": {"@type": "Organization", "name": "i3S, University of Porto"}},
+    {"@type": "Person", "givenName": "Joana T.", "familyName": "Moreira", "affiliation": {"@type": "Organization", "name": "i3S, University of Porto"}},
+    {"@type": "Person", "givenName": "João", "familyName": "Galvão", "affiliation": {"@type": "Organization", "name": "i3S, University of Porto"}},
+    {"@type": "Person", "givenName": "Camila C.", "familyName": "Portugal", "affiliation": {"@type": "Organization", "name": "i3S, University of Porto"}},
+    {"@type": "Person", "givenName": "João B.", "familyName": "Relvas", "affiliation": {"@type": "Organization", "name": "i3S / FMUP, University of Porto"}},
+    {"@type": "Person", "givenName": "Renato", "familyName": "Socodato", "affiliation": {"@type": "Organization", "name": "i3S, University of Porto"}}
+  ]
+}

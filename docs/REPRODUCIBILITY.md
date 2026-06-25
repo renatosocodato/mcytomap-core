@@ -30,13 +30,32 @@ ALL PUBLISHED VALUES REPRODUCED  ✓
 | Command | Action |
 |---|---|
 | `make reproduce` | run `reproduce_values.py` |
-| `make test` | run the assertion suite (`pytest`) |
+| `make test` | run the assertion + provenance test suite (`pytest`) |
 | `make provenance` | regenerate `outputs/` (machine-readable values + checksums) |
-| `make verify` | `reproduce` → `provenance` → verify `outputs/` checksums match the committed lineage |
+| `make diff-output` | confirm the live console output matches the committed transcript byte-for-byte |
+| `make verify` | `reproduce` → `diff-output` → `provenance --check` (full audit) |
+| `make docker-reproduce` | build the pinned container and reproduce inside it |
 | `make clean` | remove caches and regenerated artifacts |
 
-`make verify` is the recommended end-to-end audit: it re-derives the values, re-emits the
-output artifacts, and confirms they are byte-identical to the committed `outputs/`.
+`make verify` is the recommended end-to-end audit: it re-derives the values, confirms the
+console output is byte-identical to the committed transcript
+(`outputs/expected_console_output.txt`), and confirms the machine-readable outputs match
+the committed lineage.
+
+## 2b. Containerised reproduction (environment-independent)
+
+A `Dockerfile` pins the interpreter so the reproduction is independent of the host:
+
+```bash
+docker build -t mcytomap-core .
+docker run --rm mcytomap-core                          # reproduce + assert every value
+docker run --rm mcytomap-core python3 provenance.py --check   # audit committed outputs
+```
+
+The base image (`python:3.12-slim`) is pinned for definiteness; because the computation is
+deterministic and uses only the standard library, any Python ≥ 3.10 produces identical
+results. The container is built and run in CI on every change, so the pinned-environment
+reproduction is continuously verified.
 
 ## 3. Execution environment
 

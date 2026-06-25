@@ -39,10 +39,18 @@ manuscript values come from.
 
 ## 4. Continuous integration
 
-`.github/workflows/ci.yml` runs, on every push and pull request, a Python 3.10 / 3.11 /
-3.12 matrix that (i) executes `reproduce_values.py` with no dependencies and (ii) installs
-the package and runs `pytest`. A green badge therefore certifies that the published values
-reproduce on three interpreter versions from a clean environment.
+`.github/workflows/ci.yml` runs on every push and pull request:
+
+- a **reproduce** job on a Python 3.10 / 3.11 / 3.12 matrix that (i) executes
+  `reproduce_values.py` with no dependencies, (ii) checks the console output byte-for-byte
+  against the committed transcript, (iii) runs `provenance.py --check` (committed outputs
+  match a fresh deterministic run), and (iv) installs the package and runs `pytest`
+  (assertions **and** provenance-determinism tests);
+- a **container** job that builds the `Dockerfile` and reproduces inside the pinned image.
+
+A green badge therefore certifies that the published values reproduce on three interpreter
+versions from a clean environment **and** in a pinned container, with the console output
+and machine-readable outputs both matching their committed lineage.
 
 ## 5. Running validation locally
 

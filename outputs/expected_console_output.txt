@@ -1,0 +1,14 @@
+Node                    ETS Tier        pi_norm     L
+------------------------------------------------------
+Pfn1                    2.5 Validated      0.29  0.75
+Rho GTPase network      4.0 Validated      0.47  0.88
+Cdk1/MT remodeling      2.0 Validated      0.24  0.62
+Arp2/3 complex          1.5 Candidate      0.09  0.94
+Piezo1                  1.0 Candidate      0.06  0.69
+Actomyosin-podosome     1.0 Candidate      0.06  0.81
+------------------------------------------------------
+Validated tier pi_norm sum = 1.00   Candidate tier sum = 0.21
+
+ALL PUBLISHED VALUES REPRODUCED  ✓
+  Tables 1A/1B ETS, Figure 3C pi_norm, tier sums (1.00 / 0.21), and
+  Supplementary Table S1 per-cell ETS spot-checks all match.

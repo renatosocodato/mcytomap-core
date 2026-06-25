@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mcytomap-core"
-version = "1.1.0"
+version = "1.2.0"
 description = "Reference implementation of the mCytoMAP Evidence-Tier prior layer (ETS rubric + two-tier prior); reproduces Tables 1A/1B, Figure 3C and Supplementary Table S1 of the Targetome Perspective."
 readme = "README.md"
 requires-python = ">=3.10"

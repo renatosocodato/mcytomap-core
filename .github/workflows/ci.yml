@@ -16,6 +16,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Reproduce published values (no dependencies)
         run: python3 reproduce_values.py
+      - name: Exact console-output check (matches committed transcript)
+        run: python3 reproduce_values.py | diff -u outputs/expected_console_output.txt -
       - name: Provenance check (committed outputs match a fresh deterministic run)
         run: python3 provenance.py --check
       - name: Install and run the assertion test-suite
@@ -23,3 +25,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install ".[dev]"
           pytest -q
+
+  container:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the pinned reproduction container
+        run: docker build -t mcytomap-core .
+      - name: Reproduce inside the container
+        run: docker run --rm mcytomap-core
+      - name: Provenance check inside the container
+        run: docker run --rm mcytomap-core python3 provenance.py --check

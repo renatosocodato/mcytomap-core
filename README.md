@@ -69,10 +69,17 @@ One-command equivalents are provided via `make` (see [Reproducibility
 workflow](#reproducibility-workflow)):
 
 ```bash
-make reproduce      # run reproduce_values.py
-make test           # run the assertion test-suite (needs pytest)
-make provenance     # regenerate outputs/ (machine-readable values + checksums)
-make verify         # reproduce + provenance + checksum check, in one step
+make reproduce          # run reproduce_values.py
+make test               # run the assertion test-suite (needs pytest)
+make verify             # reproduce + exact-output diff + provenance check (full audit)
+make docker-reproduce   # build the pinned container and reproduce inside it
+```
+
+For a fully environment-independent run, reproduce inside the provided container — no
+local Python needed beyond Docker:
+
+```bash
+docker build -t mcytomap-core . && docker run --rm mcytomap-core
 ```
 
 ## Computational architecture
@@ -154,13 +161,16 @@ standard Python interpreter.
 mcytomap-core/
 ├── mcytomap_ets.py          # the ETS rubric, two-tier prior, posterior, per-cell ETS
 ├── reproduce_values.py      # entry point: prints + asserts every published value
-├── provenance.py            # emits outputs/ (values + checksums) for auditing
-├── outputs/                 # committed, regenerable canonical outputs + checksums
-├── tests/                   # assertion suite mirroring the published values
+├── provenance.py            # emits / checks outputs/ (values + checksums)
+├── outputs/                 # committed canonical outputs: values (json, csv),
+│                            #   checksums, and the exact console transcript
+├── tests/                   # assertion suite + provenance determinism tests
 ├── docs/                    # ARCHITECTURE · REPRODUCIBILITY · VALIDATION · PROVENANCE
-├── Makefile                 # reproduce | test | provenance | verify
+├── Dockerfile               # pinned, environment-independent reproduction
+├── Makefile                 # reproduce | test | verify | docker-reproduce
 ├── pyproject.toml           # packaging (stdlib-only runtime)
 ├── CITATION.cff             # machine-readable citation
+├── codemeta.json            # machine-readable software metadata (CodeMeta)
 └── CHANGELOG.md
 ```
 

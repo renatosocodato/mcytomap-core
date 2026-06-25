@@ -1,22 +1,60 @@
 {
   "title": "mCytoMAP-core: reference implementation of the Evidence-Tier prior layer",
   "upload_type": "software",
-  "description": "<p>Reference implementation of the literature-derived <strong>Evidence-Tier prior layer</strong> of mCytoMAP, the cytoskeletal-checkpoint prioritisation framework of the Targetome Perspective Target-S2026-0032. A single dependency-free command (<code>python3 reproduce_values.py</code>) regenerates and <em>asserts</em> every per-node value reported in the manuscript: the Evidence-Tier Scores (Tables 1A/1B), the two-tier prior pi_norm (Figure 3C), the validated/candidate tier sums (1.00 / 0.21), and the per-cell ETS(node | sex, context) values (Supplementary Table S1). The package is deterministic (no randomness, network, clock dependence, or external data), runs on the Python &ge; 3.10 standard library alone, ships committed machine-readable outputs with SHA-256 provenance, an assertion test-suite run in CI on Python 3.10-3.12, and structured documentation (architecture, reproducibility, validation, provenance). It implements exactly, and only, the prior layer whose values appear in the manuscript.</p>",
+  "description": "<p>Reference implementation of the literature-derived <strong>Evidence-Tier prior layer</strong> of mCytoMAP, the cytoskeletal-checkpoint prioritisation framework of the Targetome Perspective Target-S2026-0032. A single dependency-free command (<code>python3 reproduce_values.py</code>) regenerates and <em>asserts</em> every per-node value reported in the manuscript: the Evidence-Tier Scores (Tables 1A/1B), the two-tier prior pi_norm (Figure 3C), the validated/candidate tier sums (1.00 / 0.21), and the per-cell ETS(node | sex, context) values (Supplementary Table S1). The package is deterministic (no randomness, network, clock dependence, or external data), runs on the Python &ge; 3.10 standard library alone, ships committed machine-readable outputs with SHA-256 provenance, an assertion test-suite run in CI on Python 3.10-3.12, and structured documentation (architecture, reproducibility, validation, provenance), a pinned Docker container for environment-independent reproduction, and a committed exact console transcript checked byte-for-byte in CI. It implements exactly, and only, the prior layer whose values appear in the manuscript.</p>",
   "license": "MIT",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "access_right": "open",
-  "keywords": ["microglia", "aging", "cytoskeleton", "profilin-1", "mechanobiology", "Targetome", "mCytoMAP", "evidence grading", "reproducibility"],
+  "keywords": [
+    "microglia",
+    "aging",
+    "cytoskeleton",
+    "profilin-1",
+    "mechanobiology",
+    "Targetome",
+    "mCytoMAP",
+    "evidence grading",
+    "reproducibility"
+  ],
   "creators": [
-    {"name": "Mendes Pinto, Inês", "affiliation": "i3S / FMUP, University of Porto, Portugal"},
-    {"name": "Beça, Pedro", "affiliation": "i3S, University of Porto, Portugal"},
-    {"name": "Correia, Miguel", "affiliation": "i3S, University of Porto, Portugal"},
-    {"name": "Moreira, Joana T.", "affiliation": "i3S, University of Porto, Portugal"},
-    {"name": "Galvão, João", "affiliation": "i3S, University of Porto, Portugal"},
-    {"name": "Portugal, Camila C.", "affiliation": "i3S, University of Porto, Portugal"},
-    {"name": "Relvas, João B.", "affiliation": "i3S / FMUP, University of Porto, Portugal"},
-    {"name": "Socodato, Renato", "affiliation": "i3S, University of Porto, Portugal"}
+    {
+      "name": "Mendes Pinto, Inês",
+      "affiliation": "i3S / FMUP, University of Porto, Portugal"
+    },
+    {
+      "name": "Beça, Pedro",
+      "affiliation": "i3S, University of Porto, Portugal"
+    },
+    {
+      "name": "Correia, Miguel",
+      "affiliation": "i3S, University of Porto, Portugal"
+    },
+    {
+      "name": "Moreira, Joana T.",
+      "affiliation": "i3S, University of Porto, Portugal"
+    },
+    {
+      "name": "Galvão, João",
+      "affiliation": "i3S, University of Porto, Portugal"
+    },
+    {
+      "name": "Portugal, Camila C.",
+      "affiliation": "i3S, University of Porto, Portugal"
+    },
+    {
+      "name": "Relvas, João B.",
+      "affiliation": "i3S / FMUP, University of Porto, Portugal"
+    },
+    {
+      "name": "Socodato, Renato",
+      "affiliation": "i3S, University of Porto, Portugal"
+    }
   ],
   "related_identifiers": [
-    {"identifier": "https://github.com/renatosocodato/mcytomap-core", "relation": "isSupplementTo", "scheme": "url"}
+    {
+      "identifier": "https://github.com/renatosocodato/mcytomap-core",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
   ]
 }

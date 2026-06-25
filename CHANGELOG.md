@@ -3,6 +3,24 @@
 All notable changes to **mCytoMAP-core** are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/); versioning: [SemVer](https://semver.org/).
 
+## [1.2.0] — 2026-06-25
+
+Execution-environment and audit-hardening release. **No change to the computation or to
+any reproduced value** — `mcytomap_ets.py` and the numbers are identical to 1.0.0 / 1.1.0.
+
+### Added
+- `Dockerfile` (+ `.dockerignore`) — pinned, environment-independent reproduction; built
+  and run in CI on every change (`make docker-reproduce`).
+- `outputs/expected_console_output.txt` — the exact, committed console transcript, with a
+  `make diff-output` and a CI step that confirm a live run matches it byte-for-byte.
+- `codemeta.json` — machine-readable software metadata (CodeMeta), completing the
+  CITATION.cff / .zenodo.json / codemeta.json metadata set.
+- `tests/test_provenance.py` — provenance determinism and committed-output consistency tests.
+
+### Changed
+- CI now runs the exact console-output check and a dedicated container build/run job;
+  `make verify` now performs reproduce + diff-output + provenance check.
+
 ## [1.1.0] — 2026-06-25
 
 Documentation, reproducibility-tooling, and provenance release. **No change to the
