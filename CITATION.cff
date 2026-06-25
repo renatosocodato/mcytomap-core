@@ -10,8 +10,8 @@ identifiers:
     value: "10.5281/zenodo.20848905"
     description: "Concept DOI (resolves to the latest version)"
   - type: doi
-    value: "10.5281/zenodo.20849277"
-    description: "Version DOI (v1.1.0)"
+    value: "10.5281/zenodo.20849448"
+    description: "Version DOI (v1.2.0)"
 date-released: "2026-06-25"
 license: MIT
 repository-code: "https://github.com/renatosocodato/mcytomap-core"
