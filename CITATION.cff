@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software (this DOI) and the associated Perspective."
+title: "mCytoMAP-core: reference implementation of the Evidence-Tier Score and two-tier prior"
+abstract: "Standard-library Python reference implementation of the mCytoMAP Evidence-Tier Score (ETS) rubric and the two-tier Bayesian-style prior pi_norm(node). Reproduces the published per-node values in Tables 1A/1B and Figure 3C and the per-cell values in Supplementary Table S1 of the Targetome Perspective Target-S2026-0032."
+type: software
+version: 1.0.0
+date-released: "2026-06-25"
+license: MIT
+repository-code: "https://github.com/renatosocodato/mcytomap-core"
+keywords:
+  - microglia
+  - aging
+  - cytoskeleton
+  - profilin-1
+  - mechanobiology
+  - Targetome
+  - mCytoMAP
+  - evidence grading
+  - reproducibility
+authors:
+  - family-names: "Mendes Pinto"
+    given-names: "Inês"
+    affiliation: "i3S / FMUP, University of Porto, Portugal"
+  - family-names: "Beça"
+    given-names: "Pedro"
+    affiliation: "i3S, University of Porto, Portugal"
+  - family-names: "Correia"
+    given-names: "Miguel"
+    affiliation: "i3S, University of Porto, Portugal"
+  - family-names: "Moreira"
+    given-names: "Joana T."
+    affiliation: "i3S, University of Porto, Portugal"
+  - family-names: "Galvão"
+    given-names: "João"
+    affiliation: "i3S, University of Porto, Portugal"
+  - family-names: "Portugal"
+    given-names: "Camila C."
+    affiliation: "i3S, University of Porto, Portugal"
+  - family-names: "Relvas"
+    given-names: "João B."
+    affiliation: "i3S / FMUP, University of Porto, Portugal"
+  - family-names: "Socodato"
+    given-names: "Renato"
+    affiliation: "i3S, University of Porto, Portugal"
+preferred-citation:
+  type: article
+  title: "From Molecular Markers to Architectural Control: Cytoskeletal Checkpoints as the Decisive State-Access Layer of the Aging Microglial Targetome"
+  journal: "Targetome"
+  year: 2026
+  notes: "Manuscript Target-S2026-0032. Add the article DOI on acceptance."
+  authors:
+    - family-names: "Mendes Pinto"
+      given-names: "Inês"
+    - family-names: "Relvas"
+      given-names: "João B."
+    - family-names: "Socodato"
+      given-names: "Renato"

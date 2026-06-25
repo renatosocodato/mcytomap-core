@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcytomap-core"
+version = "1.0.0"
+description = "Reference implementation of the mCytoMAP Evidence-Tier Score (ETS) rubric and two-tier Bayesian-style prior."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["microglia", "aging", "cytoskeleton", "Targetome", "mCytoMAP", "reproducibility"]
+authors = [
+  {name = "Inês Mendes Pinto"},
+  {name = "João B. Relvas"},
+  {name = "Renato Socodato"},
+]
+dependencies = []   # standard library only
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.urls]
+Repository = "https://github.com/renatosocodato/mcytomap-core"
+
+[tool.setuptools]
+py-modules = ["mcytomap_ets", "reproduce_values"]
