@@ -1,0 +1,215 @@
+{
+  "software": "mcytomap-core",
+  "version": "1.1.0",
+  "description": "Reproduced literature-derived prior values of mCytoMAP (ETS, two-tier prior, per-cell ETS). See docs/PROVENANCE.md.",
+  "records": [
+    {
+      "quantity": "ETS",
+      "node": "Pfn1",
+      "tier": "Validated",
+      "value": 2.5,
+      "function": "mcytomap_ets.Node.ets",
+      "source": "Tables 1A/1B"
+    },
+    {
+      "quantity": "ETS",
+      "node": "Rho GTPase network",
+      "tier": "Validated",
+      "value": 4.0,
+      "function": "mcytomap_ets.Node.ets",
+      "source": "Tables 1A/1B"
+    },
+    {
+      "quantity": "ETS",
+      "node": "Cdk1/MT remodeling",
+      "tier": "Validated",
+      "value": 2.0,
+      "function": "mcytomap_ets.Node.ets",
+      "source": "Tables 1A/1B"
+    },
+    {
+      "quantity": "ETS",
+      "node": "Arp2/3 complex",
+      "tier": "Candidate",
+      "value": 1.5,
+      "function": "mcytomap_ets.Node.ets",
+      "source": "Tables 1A/1B"
+    },
+    {
+      "quantity": "ETS",
+      "node": "Piezo1",
+      "tier": "Candidate",
+      "value": 1.0,
+      "function": "mcytomap_ets.Node.ets",
+      "source": "Tables 1A/1B"
+    },
+    {
+      "quantity": "ETS",
+      "node": "Actomyosin-podosome",
+      "tier": "Candidate",
+      "value": 1.0,
+      "function": "mcytomap_ets.Node.ets",
+      "source": "Tables 1A/1B"
+    },
+    {
+      "quantity": "pi_norm",
+      "node": "Pfn1",
+      "tier": "Validated",
+      "value": 0.29,
+      "function": "mcytomap_ets.pi_norm",
+      "source": "Figure 3C"
+    },
+    {
+      "quantity": "pi_norm",
+      "node": "Rho GTPase network",
+      "tier": "Validated",
+      "value": 0.47,
+      "function": "mcytomap_ets.pi_norm",
+      "source": "Figure 3C"
+    },
+    {
+      "quantity": "pi_norm",
+      "node": "Cdk1/MT remodeling",
+      "tier": "Validated",
+      "value": 0.24,
+      "function": "mcytomap_ets.pi_norm",
+      "source": "Figure 3C"
+    },
+    {
+      "quantity": "pi_norm",
+      "node": "Arp2/3 complex",
+      "tier": "Candidate",
+      "value": 0.09,
+      "function": "mcytomap_ets.pi_norm",
+      "source": "Figure 3C"
+    },
+    {
+      "quantity": "pi_norm",
+      "node": "Piezo1",
+      "tier": "Candidate",
+      "value": 0.06,
+      "function": "mcytomap_ets.pi_norm",
+      "source": "Figure 3C"
+    },
+    {
+      "quantity": "pi_norm",
+      "node": "Actomyosin-podosome",
+      "tier": "Candidate",
+      "value": 0.06,
+      "function": "mcytomap_ets.pi_norm",
+      "source": "Figure 3C"
+    },
+    {
+      "quantity": "pi_norm_tier_sum",
+      "node": "Validated",
+      "tier": "Validated",
+      "value": 1.0,
+      "function": "mcytomap_ets.pi_norm",
+      "source": "Figure 3C"
+    },
+    {
+      "quantity": "pi_norm_tier_sum",
+      "node": "Candidate",
+      "tier": "Candidate",
+      "value": 0.21,
+      "function": "mcytomap_ets.pi_norm",
+      "source": "Figure 3C"
+    },
+    {
+      "quantity": "per_cell_ETS_aging",
+      "node": "Pfn1",
+      "tier": "Validated",
+      "value": 1.5,
+      "function": "mcytomap_ets.per_cell_ets",
+      "source": "Supplementary Table S1"
+    },
+    {
+      "quantity": "per_cell_ETS_AD",
+      "node": "Pfn1",
+      "tier": "Validated",
+      "value": 2.0,
+      "function": "mcytomap_ets.per_cell_ets",
+      "source": "Supplementary Table S1"
+    },
+    {
+      "quantity": "per_cell_ETS_aging",
+      "node": "Rho GTPase network",
+      "tier": "Validated",
+      "value": 3.0,
+      "function": "mcytomap_ets.per_cell_ets",
+      "source": "Supplementary Table S1"
+    },
+    {
+      "quantity": "per_cell_ETS_AD",
+      "node": "Rho GTPase network",
+      "tier": "Validated",
+      "value": 3.5,
+      "function": "mcytomap_ets.per_cell_ets",
+      "source": "Supplementary Table S1"
+    },
+    {
+      "quantity": "per_cell_ETS_aging",
+      "node": "Cdk1/MT remodeling",
+      "tier": "Validated",
+      "value": 1.0,
+      "function": "mcytomap_ets.per_cell_ets",
+      "source": "Supplementary Table S1"
+    },
+    {
+      "quantity": "per_cell_ETS_AD",
+      "node": "Cdk1/MT remodeling",
+      "tier": "Validated",
+      "value": 1.5,
+      "function": "mcytomap_ets.per_cell_ets",
+      "source": "Supplementary Table S1"
+    },
+    {
+      "quantity": "per_cell_ETS_aging",
+      "node": "Arp2/3 complex",
+      "tier": "Candidate",
+      "value": 0.5,
+      "function": "mcytomap_ets.per_cell_ets",
+      "source": "Supplementary Table S1"
+    },
+    {
+      "quantity": "per_cell_ETS_AD",
+      "node": "Arp2/3 complex",
+      "tier": "Candidate",
+      "value": 1.0,
+      "function": "mcytomap_ets.per_cell_ets",
+      "source": "Supplementary Table S1"
+    },
+    {
+      "quantity": "per_cell_ETS_aging",
+      "node": "Piezo1",
+      "tier": "Candidate",
+      "value": 0.5,
+      "function": "mcytomap_ets.per_cell_ets",
+      "source": "Supplementary Table S1"
+    },
+    {
+      "quantity": "per_cell_ETS_AD",
+      "node": "Piezo1",
+      "tier": "Candidate",
+      "value": 0.5,
+      "function": "mcytomap_ets.per_cell_ets",
+      "source": "Supplementary Table S1"
+    },
+    {
+      "quantity": "per_cell_ETS_aging",
+      "node": "Actomyosin-podosome",
+      "tier": "Candidate",
+      "value": 0.5,
+      "function": "mcytomap_ets.per_cell_ets",
+      "source": "Supplementary Table S1"
+    },
+    {
+      "quantity": "per_cell_ETS_AD",
+      "node": "Actomyosin-podosome",
+      "tier": "Candidate",
+      "value": 0.5,
+      "function": "mcytomap_ets.per_cell_ets",
+      "source": "Supplementary Table S1"
+    }
+  ]
+}

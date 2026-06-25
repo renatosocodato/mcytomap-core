@@ -3,12 +3,12 @@ message: "If you use this software, please cite both the software (this DOI) and
 title: "mCytoMAP-core: reference implementation of the Evidence-Tier Score and two-tier prior"
 abstract: "Standard-library Python reference implementation of the mCytoMAP Evidence-Tier Score (ETS) rubric and the two-tier Bayesian-style prior pi_norm(node). Reproduces the published per-node values in Tables 1A/1B and Figure 3C and the per-cell values in Supplementary Table S1 of the Targetome Perspective Target-S2026-0032."
 type: software
-version: 1.0.0
-doi: "10.5281/zenodo.20848906"
+version: 1.1.0
+doi: "10.5281/zenodo.20848905"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.20848905"
-    description: "Concept DOI (all versions)"
+    description: "Concept DOI (resolves to the latest version)"
 date-released: "2026-06-25"
 license: MIT
 repository-code: "https://github.com/renatosocodato/mcytomap-core"

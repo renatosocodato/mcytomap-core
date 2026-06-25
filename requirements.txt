@@ -1,0 +1,3 @@
+# Runtime dependencies: NONE.
+# mcytomap-core runs on the Python >= 3.10 standard library alone.
+# (This file is intentionally empty of packages and is provided for transparency.)

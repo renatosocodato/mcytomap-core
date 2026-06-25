@@ -1,0 +1,27 @@
+quantity,node,tier,value,function,source
+ETS,Pfn1,Validated,2.5,mcytomap_ets.Node.ets,Tables 1A/1B
+ETS,Rho GTPase network,Validated,4.0,mcytomap_ets.Node.ets,Tables 1A/1B
+ETS,Cdk1/MT remodeling,Validated,2.0,mcytomap_ets.Node.ets,Tables 1A/1B
+ETS,Arp2/3 complex,Candidate,1.5,mcytomap_ets.Node.ets,Tables 1A/1B
+ETS,Piezo1,Candidate,1.0,mcytomap_ets.Node.ets,Tables 1A/1B
+ETS,Actomyosin-podosome,Candidate,1.0,mcytomap_ets.Node.ets,Tables 1A/1B
+pi_norm,Pfn1,Validated,0.29,mcytomap_ets.pi_norm,Figure 3C
+pi_norm,Rho GTPase network,Validated,0.47,mcytomap_ets.pi_norm,Figure 3C
+pi_norm,Cdk1/MT remodeling,Validated,0.24,mcytomap_ets.pi_norm,Figure 3C
+pi_norm,Arp2/3 complex,Candidate,0.09,mcytomap_ets.pi_norm,Figure 3C
+pi_norm,Piezo1,Candidate,0.06,mcytomap_ets.pi_norm,Figure 3C
+pi_norm,Actomyosin-podosome,Candidate,0.06,mcytomap_ets.pi_norm,Figure 3C
+pi_norm_tier_sum,Validated,Validated,1.0,mcytomap_ets.pi_norm,Figure 3C
+pi_norm_tier_sum,Candidate,Candidate,0.21,mcytomap_ets.pi_norm,Figure 3C
+per_cell_ETS_aging,Pfn1,Validated,1.5,mcytomap_ets.per_cell_ets,Supplementary Table S1
+per_cell_ETS_AD,Pfn1,Validated,2.0,mcytomap_ets.per_cell_ets,Supplementary Table S1
+per_cell_ETS_aging,Rho GTPase network,Validated,3.0,mcytomap_ets.per_cell_ets,Supplementary Table S1
+per_cell_ETS_AD,Rho GTPase network,Validated,3.5,mcytomap_ets.per_cell_ets,Supplementary Table S1
+per_cell_ETS_aging,Cdk1/MT remodeling,Validated,1.0,mcytomap_ets.per_cell_ets,Supplementary Table S1
+per_cell_ETS_AD,Cdk1/MT remodeling,Validated,1.5,mcytomap_ets.per_cell_ets,Supplementary Table S1
+per_cell_ETS_aging,Arp2/3 complex,Candidate,0.5,mcytomap_ets.per_cell_ets,Supplementary Table S1
+per_cell_ETS_AD,Arp2/3 complex,Candidate,1.0,mcytomap_ets.per_cell_ets,Supplementary Table S1
+per_cell_ETS_aging,Piezo1,Candidate,0.5,mcytomap_ets.per_cell_ets,Supplementary Table S1
+per_cell_ETS_AD,Piezo1,Candidate,0.5,mcytomap_ets.per_cell_ets,Supplementary Table S1
+per_cell_ETS_aging,Actomyosin-podosome,Candidate,0.5,mcytomap_ets.per_cell_ets,Supplementary Table S1
+per_cell_ETS_AD,Actomyosin-podosome,Candidate,0.5,mcytomap_ets.per_cell_ets,Supplementary Table S1

@@ -1,0 +1,10 @@
+# Optional conda environment for exact recreation of the dev/test setup.
+# Not required to run reproduce_values.py (standard library only).
+name: mcytomap-core
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - pip
+  - pip:
+      - pytest>=7

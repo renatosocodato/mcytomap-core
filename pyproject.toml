@@ -4,16 +4,26 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mcytomap-core"
-version = "1.0.0"
-description = "Reference implementation of the mCytoMAP Evidence-Tier Score (ETS) rubric and two-tier Bayesian-style prior."
+version = "1.1.0"
+description = "Reference implementation of the mCytoMAP Evidence-Tier prior layer (ETS rubric + two-tier prior); reproduces Tables 1A/1B, Figure 3C and Supplementary Table S1 of the Targetome Perspective."
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
-keywords = ["microglia", "aging", "cytoskeleton", "Targetome", "mCytoMAP", "reproducibility"]
+keywords = ["microglia", "aging", "cytoskeleton", "Targetome", "mCytoMAP", "reproducibility", "evidence grading"]
 authors = [
   {name = "Inês Mendes Pinto"},
   {name = "João B. Relvas"},
   {name = "Renato Socodato"},
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "Operating System :: OS Independent",
 ]
 dependencies = []   # standard library only
 
@@ -22,6 +32,8 @@ dev = ["pytest>=7"]
 
 [project.urls]
 Repository = "https://github.com/renatosocodato/mcytomap-core"
+Documentation = "https://github.com/renatosocodato/mcytomap-core/tree/main/docs"
+Archive = "https://doi.org/10.5281/zenodo.20848905"
 
 [tool.setuptools]
-py-modules = ["mcytomap_ets", "reproduce_values"]
+py-modules = ["mcytomap_ets", "reproduce_values", "provenance"]

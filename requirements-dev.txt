@@ -1,0 +1,2 @@
+# Development / test dependencies only (not needed to run reproduce_values.py)
+pytest>=7

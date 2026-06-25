@@ -16,7 +16,9 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Reproduce published values (no dependencies)
         run: python3 reproduce_values.py
-      - name: Install and run tests
+      - name: Provenance check (committed outputs match a fresh deterministic run)
+        run: python3 provenance.py --check
+      - name: Install and run the assertion test-suite
         run: |
           python -m pip install --upgrade pip
           pip install ".[dev]"
